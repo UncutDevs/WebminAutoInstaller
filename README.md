@@ -21,6 +21,12 @@ curl -O https://raw.githubusercontent.com/UncutDevs/WebminAutoInstaller/master/w
 chmod +x webmin-install.sh
 ./webmin-install.sh
 ```
+
+- Default Port: **9090**.
+- SSL is **not enabled** by default.
+
+**To Access Webmin** http://YOURSERVERIP:PORT or https://YOURSERVERIP:PORT
+
 **When you execute the script, it will prompt you with a question, and the subsequent steps will be handled automatically.**
 
 ## Credits & Licence
