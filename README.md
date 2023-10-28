@@ -1,6 +1,5 @@
 # Webmin Auto Installer
-- This repository provides an automated installer script to streamline the installation of Webmin on Ubuntu and Linux systems.
-- 
+
 **This project is a bash script that aims to setup a Webmin on a Linux server, as easily as possible!**
 
 This project provides a hassle-free solution for installing Webmin on Ubuntu and Linux systems. Webmin is a powerful web-based interface designed for system administration tasks. It empowers users to efficiently manage server configurations and applications through an intuitive and user-friendly interface.
