@@ -4,10 +4,28 @@
 ##############################
 ## Configuration for Webmin ##
 ##############################
-PORT=9090 ## Define port for webmin do not add space
-## 0 = http / 1 = https
-SSL_ENABLED=0 ## Use https only if you planned to use domain with SSL otherwise go with http to remove https warning
-########################################################
+
+# Read user input for PORT
+read -p "Please specify your port if you plan to use a different port (default: 9090): " PORT
+
+# Use default port if user didn't provide any input
+PORT=${PORT:-9090}
+
+# Read user input for SSL_ENABLED
+read -p "Do you want to enable SSL? (Y/N, default: N): " SSL_INPUT
+
+# Use default value of 0 (no SSL) if user didn't provide any input
+SSL_ENABLED=0
+
+# Check if user input indicates enabling SSL
+if [[ $SSL_INPUT == [Yy]* ]]; then
+    SSL_ENABLED=1
+fi
+
+# Display chosen settings
+echo "Using the following settings:"
+echo "Port: $PORT"
+echo "SSL Enabled: $SSL_ENABLED"
 
 
 ## Add Webmint resporitory 
