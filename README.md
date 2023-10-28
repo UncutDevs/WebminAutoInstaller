@@ -21,6 +21,7 @@ curl -O https://raw.githubusercontent.com/UncutDevs/WebminAutoInstaller/master/w
 chmod +x webmin-install.sh
 ./webmin-install.sh
 ```
+**When you execute the script, it will prompt you with a question, and the subsequent steps will be handled automatically.**
 
 ## Credits & Licence
 This project is under the [MIT Licence](https://raw.githubusercontent.com/UncutDevs/WebminAutoInstaller/master/LICENSE)
