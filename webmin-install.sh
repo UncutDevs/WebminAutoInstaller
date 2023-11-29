@@ -27,6 +27,11 @@ echo "Using the following settings:"
 echo "Port: $PORT"
 echo "SSL Enabled: $SSL_ENABLED"
 
+# Check if curl is installed, install if not
+if ! command -v curl &> /dev/null; then
+    echo "curl is not installed. Installing..."
+    apt-get install -y curl
+fi
 
 ## Add Webmint resporitory 
 echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list.d/webmin.list
